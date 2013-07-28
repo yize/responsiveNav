@@ -1,0 +1,21 @@
+.ks-responsive-nav-html #J_responsiveNav{
+    max-height: 0;
+    overflow: hidden;
+    zoom: 1;
+}
+
+#J_responsiveNav.opened {
+    max-height: 9999px;
+}
+
+@media screen and (min-width: 40em) {
+    .ks-responsive-nav-html #nav {
+        position: relative;
+    }
+    .ks-responsive-nav-html #J_responsiveNav.closed {
+        max-height: none;
+    }
+    #J_responsiveNav-toggle {
+        display: none;
+    }
+}
