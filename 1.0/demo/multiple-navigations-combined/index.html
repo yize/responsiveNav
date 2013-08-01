@@ -15,15 +15,14 @@
     <ul class="main">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
+        <li><a href="#">Blog</a></li>
         <li><a href="#">Blog</a></li>
     </ul>
-
-    <ul class="alt">
-        <li><a href="#">Sitemap</a></li>
-        <li><a href="#">Help</a></li>
-        <li><a href="#">Sign In</a></li>
-    </ul>
+	<ul class="alt">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Blog</a></li>
+	</ul>
 
 </div>
 
@@ -45,6 +44,9 @@
 
     S.use('gallery/responsiveNav/1.0/index', function (S, ResponsiveNav) {
         var responsiveNav = new ResponsiveNav('#J_responsiveNav',{insert:'After'});
+	    //初始化
+	    responsiveNav.init();
+
         responsiveNav.on('init',function(){
             console.log('init');
         });
